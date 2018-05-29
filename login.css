@@ -1,0 +1,119 @@
+.contenedor-general {
+  height: 100vh;
+  width: 100%;
+  background: url(Recursos/Imagenes/Login/login.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.login {
+  background: white;
+  box-shadow: 0px 0px 10px RGBA(0, 0, 0, 0.1);
+  width: 360px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.login .login-contenido {
+  padding: 20px 30px;
+  text-align: center;
+}
+
+.login .login-contenido img {
+  margin-top: -5px;
+}
+
+.login .login-contenido h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "Cubano";
+  font-size: 25pt;
+  color: #0e3447;
+}
+
+.login .login-contenido input {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  border-radius: 12px;
+  border: solid 1px gray;
+  padding-left: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  color: #eee;
+}
+
+.login .login-contenido button {
+  background: #FB4163;
+  color: white;
+  border: transparent;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.login .login-contenido p {
+  margin: 0;
+  margin-top: 10px;
+}
+
+.login .login-contenido .buttonLogin {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.login .login-contenido .buttonLogin img {
+  height: 25px;
+  margin: 4px;
+}
+
+.login .login-contenido .buttonLogin p {
+  margin: 5px 0;
+  margin-left: 5px;
+  color: white;
+  font-size: 15px;
+}
+
+.login .login-contenido .facebook {
+  background: #2467b6;
+}
+
+.login .login-contenido .google {
+  background: #0086f8;
+}
+
+.login .login-contenido .description {
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: #ddd;
+  font-size: 12px;
+}
+
+.login .boton-opcional {
+  text-align: center;
+  cursor: pointer;
+  width: 360px;
+  margin-top: -15px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top: solid gray 1px;
+  border-radius: 0 0 12px 12px;
+}
+
+.login .boton-opcional:hover {
+  transition: ease all .5s;
+  background: #FB4163;
+  color: white;
+}
+/*# sourceMappingURL=login.css.map */
