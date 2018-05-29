@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Foody | Cocina, Aprende y Compra</title>
+    <link rel="shortcut icon" href="Recursos/Iconos/Foody.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script>
+        $(document).ready(function() {
+            $(window).on("scroll", function() {
+                var wn = $(document).scrollTop();
+                if (wn > 300) {
+                    $("#navbar").css("background", "#13d8b9");
+                    $("#navbar").css("box-shadow", "0px 0px 10px RGBA(0, 0, 0, 0.1)");
+                    $("#navbar").css("transition", "ease 1s");
+                } else {
+                    $("#navbar").css("background", "");
+                    $("#navbar").css("box-shadow", "0px 0px 0px RGBA(0, 0, 0, 0.1)");
+                    $("#navbar").css("transition", "ease 1s");
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <div class="row" id="navbar">
+        <div class="container">
+            <div class="d-flex justify-content-between col-12">
+                <a href="index.html">
+                <img class="img-bar" src="Recursos/Iconos/Foody.svg" alt="Foody logo" height="64px">
+            </a>
+                <nav class="bar">
+                    <ul>
+                        <li><a class="nav-link" href="recetas.html">Recetas</a></li>
+                        <li><a class="nav-link" href="cursos.html">Cursos</a></li>
+                        <li><a class="nav-link" href="tienda.html">Tienda</a></li>
+                        <li><a class="nav-link" href="#"><img src="Recursos/Iconos/Search.svg" alt="Search" height="30px"></a></li>
+                    </ul>
+                </nav>
+                <nav class="barl">
+                    <ul>
+                        <li><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
+                        <li><a class="nav-link" href="login.html">Crear Cuenta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="Recursos/Imagenes/Food/I.Food%20(19).jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Recursos/Imagenes/Food/I.Food%20(17).jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Recursos/Imagenes/Food/I.Food%20(18).jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Recursos/Imagenes/Food/I.Food%20(22).jpg" alt="Fourth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="Recursos/Imagenes/Food/I.Food%20(20).jpg" alt="Fifth slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    </div>
+
+    <div class="row">
+        <div class="container" style="margin-bottom: 50px">
+            <div class="d-flex justify-content-between col-12">
+                <div class="feed-recetas-titulo col-7">
+
+                    <h1>Hoy,</h1>
+                    <p>Explora nuevas recetas y contenidos</p>
+
+                    <!-- Aquí comienza cada una de las cartas o contenido de recetas-->
+
+                    <a href="#">
+                        <div class="card-recetas">
+                            <img src="Recursos/Imagenes/Food/I.Food%20(3).jpg" alt="Food" style="width: 100%">
+
+                            <div class="card-recetas-contenido row">
+                                <div class="card-recetas-texto col-9">
+                                    <h2>Cocina Belga</h2>
+                                    <h3>Estofado de cordero y calabaza</h3>
+                                    <p class="p-card-recetas-texto">Una receta típica de las zonas rurales de bruselas, que endulza tu paladar y asombrará a tus comensales con su fuerte aroma y su fantástica textura.</p>
+                                </div>
+
+                                <div class="card-recetas-calificacion col-3 ">
+                                    <div class="calificacion-tiempo">
+                                        <img class="calificacion-tiempo-svg" src="Recursos/Iconos/Calificacion/Tiempo%20-%20Oro.svg" alt="Tiempo" style="height: 17px">
+                                        <h4>30 min</h4>
+                                    </div>
+
+                                    <div class="calificacion-estrellas">
+                                        <img class="calificacion-estrellas-svg" src="Recursos/Iconos/Calificacion/4,5%20estrellas%20-%20Oro.svg" alt="4,5 Estrellas">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Linea de corte -->
+
+                    <!-- Aquí comienza cada una de las cartas o contenido de recetas-->
+
+                    <a href="#">
+                        <div class="card-recetas">
+                            <img src="Recursos/Imagenes/Food/I.Food%20(4).jpg" alt="Food" style="width: 100%">
+
+                            <div class="card-recetas-contenido row">
+                                <div class="card-recetas-texto col-9">
+                                    <h2>Cocina Turca</h2>
+                                    <h3>Saldsiski de vegetales</h3>
+                                    <p class="p-card-recetas-texto">Desde las calles de Estambul llega a tu mesa un platillo rápido y delicioso, basado en verduras del mercado local y con un toque de paprika.</p>
+                                </div>
+
+                                <div class="card-recetas-calificacion col-3 ">
+                                    <div class="calificacion-tiempo">
+                                        <img class="calificacion-tiempo-svg" src="Recursos/Iconos/Calificacion/Tiempo%20-%20Oro.svg" alt="Tiempo" style="height: 17px">
+                                        <h4>12 min</h4>
+                                    </div>
+
+                                    <div class="calificacion-estrellas">
+                                        <img class="calificacion-estrellas-svg" src="Recursos/Iconos/Calificacion/4%20estrellas%20-%20Oro.svg" alt="4 Estrellas">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Linea de corte -->
+
+                    <!-- Aquí comienza cada una de las cartas o contenido de recetas-->
+
+                    <a href="">
+                        <div class="card-recetas">
+                            <img src="Recursos/Imagenes/Food/I.Food%20(5).jpg" alt="Food" style="width: 100%">
+
+                            <div class="card-recetas-contenido row">
+                                <div class="card-recetas-texto col-9">
+                                    <h2>epostería Francesa</h2>
+                                    <h3>Galletas Fië Court</h3>
+                                    <p class="p-card-recetas-texto">Nada mejor que acompañar la vista de la torre Eiffel con un delicioso expresso y unas crocantes galletas.</p>
+                                </div>
+
+                                <div class="card-recetas-calificacion col-3 ">
+                                    <div class="calificacion-tiempo">
+                                        <img class="calificacion-tiempo-svg" src="Recursos/Iconos/Calificacion/Tiempo%20-%20Oro.svg" alt="Tiempo" style="height: 17px">
+                                        <h4>45 min</h4>
+                                    </div>
+
+                                    <div class="calificacion-estrellas">
+                                        <img class="calificacion-estrellas-svg" src="Recursos/Iconos/Calificacion/4%20estrellas%20-%20Oro.svg" alt="4 Estrellas">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Linea de corte -->
+
+                </div>
+
+                <div class="feed-top col-4 content">
+
+                    <div class="top-chef row">
+                        <h5 class="top-chef-texto">Chef</h5>
+                        <div class="chef-foto row">
+
+                            <!--Fila de usuarios-->
+
+                            <div class="user col-4 align-middle">
+                                <a href="">
+                                <img class="chef-foto-png" src="Recursos/Imagenes/Users/UsersRound/I.User%20Round%20(1).png" alt="User">
+                                <h6>Jhon</h6>
+                                </a>
+                            </div>
+
+                            <div class="user col-4 align-middle">
+                                <a href="">
+                                <img class="chef-foto-png" src="Recursos/Imagenes/Users/UsersRound/I.User%20Round%20(2).png" alt="User">
+                                <h6>Clara</h6>
+                                </a>
+                            </div>
+
+                            <div class="user col-4 align-middle">
+                                <a href="">
+                                <img class="chef-foto-png" src="Recursos/Imagenes/Users/UsersRound/I.User%20Round%20(3).png" alt="User">
+                                <h6>Josefa</h6>
+                                </a>
+                            </div>
+
+                            <!-- Fin fila usaurios-->
+
+                            <!--Fila de usuarios-->
+
+                            <div class="user col-4 align-middle">
+                                <a href="">
+                                <img class="chef-foto-png" src="Recursos/Imagenes/Users/UsersRound/I.User%20Round%20(4).png" alt="User">
+                                <h6>Juan</h6>
+                                </a>
+                            </div>
+
+                            <div class="user col-4 align-middle">
+                                <a href="">
+                                <img class="chef-foto-png" src="Recursos/Imagenes/Users/UsersRound/I.User%20Round%20(5).png" alt="User">
+                                <h6>Steven</h6>
+                                </a>
+                            </div>
+
+                            <div class="user col-4 align-middle">
+                                <a href="">
+                                <img class="chef-foto-png" src="Recursos/Imagenes/Users/UsersRound/I.User%20Round%20(6).png" alt="User">
+                                <h6>Jhen</h6>
+                                </a>
+                            </div>
+
+                            <!-- Fin fila usaurios-->
+
+                        </div>
+                        <h7><a href="">+VER TODO</a></h7>
+                    </div>
+
+                    <div class="top-cursos row">
+                        <h5 class="top-cursos-texto">Cursos top</h5>
+                        <div class="cursos-foto row">
+
+                            <div class="cursos">
+                                <img class="cursos-foto-png" src="Recursos/Imagenes/Thumbnails/I.Thumbnails%20(1).png" alt="Cursos">
+
+                                <div class="cursos-contenido">
+                                    <h8>Cocina Michelin</h8>
+                                    <p class="p-contenido-texto">25 Clases - 35 Recetas</p>
+                                    <div class="contenido-tiempo">
+                                        <img class="contenido-tiempo-svg" src="Recursos/Iconos/Calificacion/Tiempo%20-%20Azul.svg" alt="Tiempo" style="height: 17px">
+                                        <p class="p-contenido-texto">60 Horas</p>
+                                    </div>
+
+                                    <div class="contenido-estrellass">
+                                        <img class="contenido-estrellas-svg" src="Recursos/Iconos/Calificacion/5%20estrellas%20-%20Azul.svg" alt="5 Estrellas">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cursos">
+                                <img class="cursos-foto-png" src="Recursos/Imagenes/Thumbnails/I.Thumbnails%20(2).png" alt="Cursos">
+
+                                <div class="cursos-contenido">
+                                    <h8>El mundo desde la ensalada</h8>
+                                    <p class="p-contenido-texto">10 Clases - 27 Recetas</p>
+                                    <div class="contenido-tiempo">
+                                        <img class="contenido-tiempo-svg" src="Recursos/Iconos/Calificacion/Tiempo%20-%20Azul.svg" alt="Tiempo" style="height: 17px">
+                                        <p class="p-contenido-texto">30 Horas</p>
+                                    </div>
+
+                                    <div class="contenido-estrellass">
+                                        <img class="contenido-estrellas-svg" src="Recursos/Iconos/Calificacion/4%20estrellas%20-%20Azul.svg" alt="4 Estrellas">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <h7><a href="cursos.html">+VER TODO</a></h7>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="footer">
+        <div class="container">
+            <div class="fd-flex justify-content-around col-12">
+                <div class="footer-contenido-social col-md-4">
+                    <div class="footer-contenido-social-texto">
+                        <h9>Encuentranos en:</h9>
+                    </div>
+                    <nav class="footer justify-content-center align-items-middle">
+                        <a href="" target="_blank"><img src="Recursos/Iconos/Social/facebook.svg" alt="Facebook" style="width: 10%"></a>
+
+                        <a href="" target="_blank"><img src="Recursos/Iconos/Social/instagram.svg" alt="Instagram" style="width: 10%"></a>
+
+                        <a href="" target="_blank"><img src="Recursos/Iconos/Social/twitter.svg" alt="Twitter" style="width: 10%"></a>
+
+                        <a href="" target="_blank"><img src="Recursos/Iconos/Social/youtube.svg"
+                         alt="YouTube" style="width: 10%"></a>
+                    </nav>
+                </div>
+
+                <div class="footer-contenido-ad col-md-4">
+                    <nav class="footer justify-content-between">
+                        <a href="">
+                            <h9>Soporte</h9>
+                        </a>
+                        <a href="">
+                            <h9>Empleo</h9>
+                        </a>
+                        <a href="">
+                            <h9>Únete</h9>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
